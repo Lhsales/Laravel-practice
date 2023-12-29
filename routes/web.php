@@ -13,11 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/', 'welcome')->name('home');
 
-Route::get('/contato/{id?}', ['uses'=>'App\Http\Controllers\ContatoController@Index']);
+Route::get('/contato/{id?}', ['uses'=>'App\Http\Controllers\ContatoController@Index'])->name('contato');
 Route::post('/contato', ['uses'=>'App\Http\Controllers\ContatoController@Criar']);
 Route::put('/contato', ['uses'=>'App\Http\Controllers\ContatoController@Editar']);
 
