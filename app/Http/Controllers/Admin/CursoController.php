@@ -9,9 +9,15 @@ use App\Models;
 class CursoController extends Controller
 {
     //
-    public function Index(){
+    public function Index()
+    {
         $cursos = Models\Curso::all();
 
         return view('admin.curso.index', compact('cursos'));
+    }
+
+    public function Adicionar()
+    {
+        return view('admin.curso.adicionar');
     }
 }

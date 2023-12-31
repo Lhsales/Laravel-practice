@@ -29,7 +29,9 @@
         <script type="text/javascript">
             $(document).ready(function(){
                 $('.sidenav').sidenav();
+                $('input#input_text, textarea#textarea1').characterCounter();
             });
+            
         </script>
     </body>
 </html>
