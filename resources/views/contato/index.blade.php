@@ -13,6 +13,8 @@
             <tr>
                 <th> Nome </th>
                 <th> Telefone </th>
+                <th> Dt. Atualização </th>
+                <th> Dt. Criação </th>
             </tr>
         </thead>
     
@@ -20,6 +22,8 @@
         <tr>
             <td scope="col-7"> {{ $item->nome }} </td>
             <td scope="col"> {{ $item->tel }} </td>
+            <td scope="col"> {{ (string)$item->updated_at }} </td>
+            <td scope="col"> {{ (string)$item->created_at }} </td>
         </tr>
         @endforeach
     
