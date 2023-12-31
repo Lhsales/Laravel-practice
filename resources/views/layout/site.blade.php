@@ -13,8 +13,8 @@
     <body>
         @include('layout.include.top')
         <main>
-            <div class="container-fluid text-center py-4">
-                <h1>@yield('title-content')</h1>
+            <div class="container">
+                <h2 class="center">@yield('title-content')</h2>
             </div>
             
             <div class="container">
