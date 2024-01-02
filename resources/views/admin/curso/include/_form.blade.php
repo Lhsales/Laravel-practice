@@ -30,6 +30,11 @@
         <div class="file-path-wrapper">
             <input class="file-path validate" type="text">
         </div>
+        @if (isset($registro->imagem))
+            <div class="input-field">
+                <img src="{{asset($registro->imagem)}}" width="200px">
+            </div>
+        @endif
     </div>
     <div class="col s6 right-align">
         <label>
