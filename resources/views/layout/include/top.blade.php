@@ -1,5 +1,5 @@
 <nav>
-    <div class="nav-wrapper">
+    <div class="nav-wrapper blue">
       <a href="#" class="brand-logo" style="padding-left: 10px">Laravel Practice</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="{{ route('home') }}">Home</a></li>

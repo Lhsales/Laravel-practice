@@ -24,7 +24,7 @@
         @foreach ($cursos as $item)
         <tr>
             <td scope="col"> {{ $item->titulo }} </td>
-            <td scope="col"> <img src="{{asset($item->imagem)}}" alt="{{ $item->titulo }}"> </td>
+            <td scope="col"> <img src="{{asset($item->imagem)}}" alt="{{ $item->titulo }}" style="max-height: 100px"> </td>
             <td scope="col"> {{ $item->publicado }} </td>
             <td scope="col"> {{ (string)$item->updated_at }} </td>
             <td scope="col"> {{ (string)$item->created_at }} </td>
