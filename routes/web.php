@@ -27,6 +27,6 @@ Route::controller(Admin\CursoController::class)->group(function(){
     Route::post('/admin/cursos/salvar', 'Salvar')->name('admin.cursos.salvar');
     Route::get('/admin/cursos/editar/{id}', 'Editar')->name('admin.cursos.editar');
     Route::post('/admin/cursos/atualizar/{id}', 'Atualizar')->name('admin.cursos.atualizar');
-    Route::delete('/admin/cursos/deletar/{id}', 'Deletar')->name('admin.cursos.deletar');
+    Route::get('/admin/cursos/deletar/{id}', 'Deletar')->name('admin.cursos.deletar');
 });
 
