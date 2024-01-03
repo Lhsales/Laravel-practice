@@ -15,7 +15,9 @@ use App\Http\Controllers\Admin;
 |
 */
 
-Route::view('/', 'welcome')->name('home');
+Route::controller(Controllers\HomeController::class)->group(function(){
+    Route::get('/', 'Index')->name('home');
+});
 
 Route::get('/contato/{id?}', ['uses'=>'App\Http\Controllers\ContatoController@Index'])->name('contato');
 Route::post('/contato', ['uses'=>'App\Http\Controllers\ContatoController@Criar']);
